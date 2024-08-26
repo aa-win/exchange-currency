@@ -1,0 +1,39 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+input,
+select,
+button {
+    padding: 4px 10px;
+    border-radius: 5px;
+    border: none;
+}
+button{
+    background-color: goldenrod;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+button:active {
+    animation: pressEffect 0.2s ease;
+}
+
+@keyframes pressEffect {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(2px); }
+    100% { transform: translateY(0); }
+}
+h3{
+    color: whitesmoke;
+    font-size: 24px;
+    text-align: center;
+}
